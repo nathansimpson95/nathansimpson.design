@@ -54,17 +54,28 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Nathan Simpson : Designer + Developer',
-        short_name: 'Nathan Simpson',
+        short_name: 'Nathan',
         start_url: `/`,
-        background_color: `#fa6d01`,
-        theme_color: `#fa6d01`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon-32.png` // This path is relative to the root of the site.
+        background_color: '#13171a',
+        theme_color: `#000000`,
+        display: 'standalone',
+        icon: `src/images/favicon-32.png`, // This path is relative to the root of the site.
+        icons: [
+          {
+            src: '/public/apple-touch-icon-192x192-precomposed.png',
+            type: 'image/png',
+            sizes: '192x192'
+          },
+          {
+            src: '/public/apple-touch-icon-512x512-precomposed.png',
+            type: 'image/png',
+            sizes: '512x512'
+          }
+        ]
       }
-    }
-
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline'
   ]
 };
