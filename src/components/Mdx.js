@@ -9,6 +9,7 @@ import { useCodeHighlightTheme } from './codeHighlightTheme';
 import { Button, LinkButton } from '../../design-system/button';
 import { ContentCard } from '../../design-system/contentcard';
 import { Icon } from '../../design-system/icon';
+import { TextInput } from '../../design-system/textinput';
 import { Tiles } from '../../design-system/tiles';
 import { Tag } from '../../design-system/tag';
 import { Box, FlexBox } from '../../design-system/box';
@@ -31,6 +32,7 @@ const DsComponents = {
   FlexBox,
   Heading,
   Icon,
+  TextInput,
   LinkButton,
   Stack,
   Tag,
